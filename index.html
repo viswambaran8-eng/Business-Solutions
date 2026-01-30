@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly Business Solutions</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./Assets/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./error.html">Home</a></li>
+          <li><a href="./error.html">About</a></li>
+          <li><a href="./error.html">Services</a></li>
+          <li><a href="./error.html">Portfolio</a></li>
+          <li><a href="./error.html">Blog</a></li>
+          <li><a href="./error.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <div class="login">
+          <i class="fa-regular fa-circle-user"></i>
+        </div>
+
+        <div class="mobilebar">
+          <div class="hamburger-box">
+            <div class="hamburger">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="./error.html">Home</a></li>
+        <li><a href="./error.html">About</a></li>
+        <li><a href="./error.html">Services</a></li>
+        <li><a href="./error.html">Portfolio</a></li>
+        <li><a href="./error.html">Blog</a></li>
+        <li><a href="./error.html">Contact</a></li>
+      </ul>
+
+      <div class="sidebar-login">
+        <button class="login-btn">Sign In</button>
+        <button class="login-btn">Get Started</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="hero-section">
+        <!-- Swiper Background -->
+        <div class="swiper heroSwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/hero1.png&quot;);
+                filter: brightness(40%);
+              "
+            ></div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/hero2.png&quot;);
+                filter: brightness(40%);
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/hero3.png&quot;);
+                filter: brightness(40%);
+                background-position: center;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <!-- Fixed Content -->
+        <div class="heroblock">
+          <div class="hero-content">
+            <span class="herotagline">Grow Faster. Market Smarter.</span>
+
+            <h1>Marketing Solutions<br />That Drive Real Results</h1>
+
+            <p>
+              Unlock your business’s true potential with strategic campaigns
+              designed to boost visibility, engagement, and revenue.
+            </p>
+
+            <button class="cta-btn">Get a Free Consultation</button>
+            <div class="hero-stats">
+              <div class="avatars">
+                <img src="./Assets/t1_11zon_11zon (1).webp" alt="avatar" />
+                <img src="./Assets/t3_11zon_11zon (1).webp" alt="avatar" />
+                <img src="./Assets/t2_11zon_11zon (1).webp" alt="avatar" />
+                <img src="./Assets/t4_11zon_11zon (1).webp" alt="avatar" />
+              </div>
+
+              <div class="stats-text">
+                <h3>870k+</h3>
+                <span>Brands Transformed</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-wrapper">
+            <div class="review-card">
+              <!-- REVIEW TEXT -->
+              <p class="review-text" id="reviewText"></p>
+
+              <!-- FOOTER -->
+              <div class="review-footer">
+                <div class="google-info">
+                  <img
+                    src="./Assets/google-removebg-preview.png"
+                    alt="Google"
+                  />
+                  <div>
+                    <span class="rating">4.8 ★</span><br />
+                    <!-- <span class="source">Google Review</span> -->
+                  </div>
+                </div>
+
+                <!-- NAV BUTTONS -->
+                <div class="review-nav">
+                  <button id="prevBtn">←</button>
+                  <button id="nextBtn">→</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="Structure">
+      <div class="hero">
+        <div class="hero-container">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+              alt="IT Team"
+            />
+            <div class="chart-box">
+              <h4>$120,544</h4>
+              <div class="chart">Gross</div>
+            </div>
+          </div>
+
+          <div class="hero-paragraph">
+            <p class="tag" data-aos="fade-left" data-aos-delay="100">
+              <span></span> OUR TRUSTED SUPPORT
+            </p>
+
+            <h1 data-aos="fade-left" data-aos-delay="180">
+              Building the Future with Business Solutions
+            </h1>
+
+            <div class="tabs">
+              <button data-aos="zoom-in" data-aos-delay="100" class="active">
+                Our Mission
+              </button>
+              <button data-aos="zoom-in" data-aos-delay="100">
+                Our Vision
+              </button>
+              <button data-aos="zoom-in" data-aos-delay="100">
+                Our History
+              </button>
+            </div>
+
+            <p class="desc" data-aos="fade-left" data-aos-delay="100">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+
+            <div class="features">
+              <div>
+                <i class="fa-solid fa-circle-check"></i> Technology Consultancy
+              </div>
+              <div>
+                <i class="fa-solid fa-circle-check"></i> Maintenance And Support
+              </div>
+              <div>
+                <i class="fa-solid fa-circle-check"></i> We Provide Best
+                Services
+              </div>
+              <div>
+                <i class="fa-solid fa-circle-check"></i> Requirements Gathering
+              </div>
+            </div>
+
+            <div class="actions">
+              <button data-aos="fade-right" data-aos-delay="100" class="btn">
+                Discover More →
+              </button>
+              <div class="contact" data-aos="fade-left" data-aos-delay="100">
+                <i class="fa-solid fa-phone"></i>
+                <span>(+480) 123 678 900</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="basket">
+        <div class="box">
+          <div class="tab1">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <div class="tab2">
+            <h2>Managed IT Services</h2>
+            <p>Complete Account of System and expound the actual.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="tab1">
+            <i class="fa-solid fa-display"></i>
+          </div>
+          <div class="tab2">
+            <h2>Digital Experience</h2>
+            <p>Complete Account of System and expound the actual.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="tab1">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="tab2">
+            <h2>Cyber Security</h2>
+            <p>Complete Account of System and expound the actual.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="tab1">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="tab2">
+            <h2>Deployment Services</h2>
+            <p>Complete Account of System and expound the actual.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Container">
+        <h2 class="heading">Driving Digital Transformation with Smart Business Solutions</h2>
+        <div class="grid">
+          <!-- HERO -->
+          <div class="card hero">
+            <h1 data-aos="fade-up" data-aos-delay="100">
+              Nexora delivers intelligent business solutions that optimize
+              operations, strengthen security, and drive long-term digital
+              growth.
+            </h1>
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+              Business Consulting • Cloud Services • Cybersecurity
+            </p>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="card send">
+            <h3 data-aos="fade-up" data-aos-delay="100">Managed Business IT</h3>
+            <p data-aos="fade-up" data-aos-delay="200">
+              End-to-end IT management ensuring operational continuity, data
+              protection, and performance excellence.
+            </p>
+            <div class="amount" data-aos="fade-up" data-aos-delay="300">
+              24/7 Business Support
+            </div>
+          </div>
+
+          <!-- CLOUD -->
+          <div class="card language">
+            <h3 data-aos="fade-up" data-aos-delay="100">
+              Cloud & Digital Infrastructure
+            </h3>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Scalable cloud platforms that enable secure collaboration, remote
+              access, and global business expansion.
+            </p>
+            <img
+              src="./Assets/cloud.png"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              alt="Cloud Infrastructure"
+            />
+          </div>
+
+          <!-- ANALYTICS -->
+          <div class="card phone">
+            <h3 data-aos="fade-up" data-aos-delay="100">
+              We enables organizations to make faster, smarter, and data-driven
+              decisions.
+            </h3>
+            <img
+              src="./Assets//business-concept-with-graphic-holography_11zon_11zon.png"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              alt="Business Analytics Dashboard"
+            />
+            <p>Real-Time Business Analytics</p>
+          </div>
+
+          <!-- PERFORMANCE -->
+          <div class="card balance-card">
+            <h3 data-aos="fade-up" data-aos-delay="100">
+              Operational Efficiency
+            </h3>
+            <div class="balance" data-aos="fade-up" data-aos-delay="200">
+              3× Faster Execution
+            </div>
+            <div class="mini-bar" data-aos="fade-up" data-aos-delay="250"></div>
+            <img
+              src="./Assets/front-view-businessman-with-colorful-cones-representing-growth_11zon_11zon.webp"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              alt="Performance Insights"
+            />
+            <p>
+              Real-time performance intelligence enabling strategic decisions,
+              agility, and improved organizational outcomes.
+            </p>
+          </div>
+
+          <!-- TRUST -->
+          <div class="card Trust">
+            <h2>Business Impact</h2>
+            <img src="./Assets/badge.png" alt="Business Solutions Icon" />
+            <p>
+              Driving growth through scalable IT solutions, smart automation,
+              and secure digital infrastructure built for modern businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero1">
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          Intelligent Business Solutions <br />Designed for Digital Growth
+        </h1>
+
+        <div class="services-wrapper">
+          <div class="services">
+            <div class="service">☁️ Cloud Infrastructure</div>
+            <div class="service">🔐 Enterprise Security</div>
+            <div class="service">💼 Business Software Solutions</div>
+            <div class="service">📈 Business Intelligence & Analytics</div>
+            <div class="service">⚙️ Digital Transformation Consulting</div>
+
+            <!-- Duplicate for smooth loop -->
+            <div class="service">☁️ Cloud Infrastructure</div>
+            <div class="service">🔐 Enterprise Security</div>
+            <div class="service">💼 Business Software Solutions</div>
+            <div class="service">📈 Business Intelligence & Analytics</div>
+            <div class="service">⚙️ Digital Transformation Consulting</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-section">
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          Trusted by Growing Businesses Worldwide
+        </h2>
+
+        <div class="reviews-container">
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "Their business-focused IT strategy streamlined our operations and
+              improved system reliability."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — CTO, Financial Services Firm
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "Scalable, secure, and expertly managed IT solutions tailored to
+              our business needs."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — IT Director, Healthcare Organization
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "Seamless cloud modernization enabled faster product launches with
+              zero disruption."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — Product Head, SaaS Company
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "Their cybersecurity solutions strengthened our infrastructure and
+              ensured compliance."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — Head of Security, Digital Commerce Brand
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "Consistent delivery, measurable results, and a strong
+              understanding of business priorities."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — Operations Lead, Enterprise Solutions Firm
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+
+          <div class="review-card">
+            <p data-aos="fade-up" data-aos-delay="100">
+              "A long-term technology partner driving innovation and sustainable
+              business growth."
+            </p>
+            <h4 data-aos="fade-up" data-aos-delay="200">
+              — Founder & CEO, Technology Startup
+            </h4>
+            <span data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <div class="faq-container">
+          <h1 data-aos="fade-up" data-aos-delay="100">
+            Frequently Asked Questions
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Everything you need to know about Stackly Business Solutions &
+            services
+          </p>
+
+          <!-- SEARCH -->
+          <input
+            class="faq-search"
+            type="text"
+            placeholder="Search your question..."
+            onkeyup="searchFaq()"
+          />
+
+          <!-- FAQ 1 -->
+          <div class="faq-item" onclick="toggleFaq(0)">
+            <span>What is Stackly Business Solutions?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Stackly Business Solutions delivers end-to-end digital and
+            business-focused solutions including automation, analytics, and
+            enterprise platforms.
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item" onclick="toggleFaq(1)">
+            <span>What industries does Stackly support?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            We support finance, healthcare, retail, logistics, education, and
+            fast-growing enterprises worldwide.
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item" onclick="toggleFaq(2)">
+            <span>Do you offer customized business solutions?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Yes, we design and deliver tailored business platforms, workflows,
+            and digital solutions aligned with your goals.
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item" onclick="toggleFaq(3)">
+            <span>How secure are Stackly’s business solutions?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Security is built into every solution through compliance standards,
+            data protection, and enterprise-grade security frameworks.
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item" onclick="toggleFaq(4)">
+            <span>Do you support cloud-enabled business operations?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Yes, we enable cloud-driven operations, scalable platforms, and
+            automation to support business growth.
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item" onclick="toggleFaq(5)">
+            <span>Can Stackly help with business transformation?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Absolutely. We help modernize processes, optimize operations, and
+            drive digital transformation initiatives.
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item" onclick="toggleFaq(6)">
+            <span>Do you provide business consulting services?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Yes, our consultants provide strategic guidance, process
+            optimization, and technology-enabled business planning.
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item" onclick="toggleFaq(7)">
+            <span>How can I get started with Stackly Business Solutions?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            You can reach out through our website to schedule a free
+            consultation with our business solution specialists.
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item" onclick="toggleFaq(8)">
+            <span>Do you offer ongoing business support?</span>
+            <div class="faq-btn">+</div>
+          </div>
+          <div class="faq-answer">
+            Yes, we provide continuous support, performance monitoring, and
+            optimization services post-deployment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h3>Stackly Business Solutions</h3>
+          <p>
+            Stackly Business Solutions helps organizations streamline
+            operations, drive growth, and make smarter decisions through
+            scalable digital platforms, analytics, and business transformation
+            services.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="./error.html">Home</a>
+          <a href="./error.html">About Us</a>
+          <a href="./error.html">Solutions</a>
+          <a href="./error.html">Case Studies</a>
+          <a href="./error.html">Insights</a>
+          <a href="./error.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Business Solutions</h3>
+          <a href="./error.html">Business Consulting</a>
+          <a href="./error.html">Process Automation</a>
+          <a href="./error.html">Data & Analytics</a>
+          <a href="./error.html">Digital Transformation</a>
+        </div>
+
+        <div>
+          <h3>Stay Connected</h3>
+          <p>
+            Get business insights, trends, and growth strategies delivered
+            monthly
+          </p>
+          <div class="subscribe">
+            <input type="email" placeholder="Your business email" />
+            <a href="./error.html">
+              <button>Subscribe</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Stackly Business Solutions. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-out-cubic",
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./review.js"></script>
+    <script src="./faq.js"></script>
+    <script>
+      // Hamburger Menu Functionality
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active"); // Animate hamburger
+        sidebar.classList.toggle("active"); // Toggle sidebar
+        overlay.classList.toggle("active"); // Toggle overlay
+        document.body.classList.toggle("no-scroll"); // Disable body scroll
+      });
+
+      overlay.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("no-scroll"); // Enable body scroll
+      });
+
+      // Tabs Functionality
+      const tabs = document.querySelectorAll(".tabs button");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
