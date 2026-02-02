@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>404 | Page Not Found</title>
+
+<!-- Lottie -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(120deg, #050b2e, #0a0a2a, #05143a);
+  animation: bgShift 12s infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@keyframes bgShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(30deg); }
+}
+
+/* Floating blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(35px);
+  opacity: 0.6;
+  animation: float 12s infinite ease-in-out;
+}
+
+.blob.one {
+  width: 250px;
+  height: 250px;
+  background: #4f46e5;
+  top: 8%;
+  left: 8%;
+}
+
+.blob.two {
+  width: 320px;
+  height: 320px;
+  background: #7a7ad7;
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+.blob.three {
+  width: 180px;
+  height: 180px;
+  background: #38bdf8;
+  top: 65%;
+  left: 30%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(40px,-40px); }
+  100% { transform: translate(0,0); }
+}
+
+/* Glass card */
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 50px 60px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 70px rgba(79,70,229,0.6);
+}
+
+/* Lottie wrapper */
+.lottie-box {
+  width: 260px;
+  margin: auto;
+}
+
+/* 404 text */
+.glitch {
+  font-size: 120px;
+  font-weight: 800;
+  margin-top: -30px;
+  color: #38bdf8;
+  text-shadow: 
+    0 0 30px rgba(56,189,248,0.9),
+    0 0 50px rgba(79,70,229,0.7),
+    0 0 70px rgba(122,122,215,0.5);
+  animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from { text-shadow: 0 0 20px #7a7ad7; }
+  to { text-shadow: 0 0 45px #4f46e5; }
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+p {
+  opacity: 0.8;
+  margin: 14px 0 30px;
+  color: #e0e7ff;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 14px 38px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #7a7ad7, #4f46e5);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 30px rgba(79,70,229,0.7);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 55px rgba(122,122,215,1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="blob one"></div>
+<div class="blob two"></div>
+<div class="blob three"></div>
+
+<div class="container">
+
+  <!-- LOTTIE ANIMATION -->
+  <div class="lottie-box">
+    <lottie-player
+      src="https://assets2.lottiefiles.com/packages/lf20_j1adxtyb.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <div class="glitch">404</div>
+  <h2>Page Not Found</h2>
+  <p>Looks like this page drifted into another universe.</p>
+  <a href="/index.html" class="btn">Go Back Home</a>
+
+</div>
+
+</body>
+</html>
